@@ -40,5 +40,5 @@ The average views is 67541
  
 ## Dependency
 
-[scrapetube](https://github.com/dermasmid/scrapetube)
+This project use the youtube scraper [scrapetube](https://github.com/dermasmid/scrapetube)
 
