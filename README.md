@@ -87,10 +87,17 @@ Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland
 Saved mean_median_views.png
 ```
 
-It produce this image
+It produce this image ![alt mean_median_views.png](https://raw.githubusercontent.com/gioisco/yt-scraper/main/screenshots/mean_median_views.png)
 
  
 ## Dependency
 
-This project use the youtube scraper [scrapetube](https://github.com/dermasmid/scrapetube)
+The complete list is avalilable on (requirements.txt)
+
+In summary, this project use:
+ - youtube scraper [scrapetube](https://github.com/dermasmid/scrapetube)
+ - datafrapa [pandas](https://pypi.org/project/pandas/)
+ - drawer plot [matplotlib](https://pypi.org/project/matplotlib/)
+ - render plot [PyQt5](https://pypi.org/project/PyQt5/)
+ - ascii art font [pyfiglet](https://pypi.org/project/pyfiglet/0.7/)
 
