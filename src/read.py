@@ -1,13 +1,12 @@
 import os
 import pyfiglet
 import scrapetube
-import textwrap
 from datetime import datetime
 import pandas as pd
 
 from utils import extract_number
 
-ascii_art = pyfiglet.figlet_format("Youtube scraper")
+ascii_art = pyfiglet.figlet_format("YT Scraper Analyzer")
 print(ascii_art)
 
 
@@ -40,8 +39,10 @@ for video in videos:
     video_id = video['videoId']
     title = video['title']['runs'][x+1]['text']
     view_count = extract_number(video['viewCountText']['simpleText'])
+    view_count = view_count
     videos_data.append((now, video_id, view_count, title))
 
+videos_data.reverse()
 df = pd.DataFrame(videos_data, columns=['date_time', 'video_id', 'view_count', 'title'])
 print(df)
 
